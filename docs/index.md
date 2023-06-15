@@ -1,4 +1,4 @@
-#<p style="text-align: center;">fMROI</p>
+#fMROI
 **<p style="text-align: center;">User-Friendly ROI Creation and Neuroimage Visualization Software</p>**
 
 <p align="center">
