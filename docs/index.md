@@ -1,6 +1,5 @@
-<p style="text-align: center;">
-<h1 id="fmroi">fMROI</h1>
-</p>
+fMROI
+=====
 **<p style="text-align: center;">User-Friendly ROI Creation and Neuroimage Visualization Software</p>**
 
 <p align="center">
@@ -19,5 +18,5 @@ fMROI is a powerful and user-friendly software designed to simplify ROI creation
 
 3. **Flawless Performance:** fMROI has been rigorously tested and validated against well-established neuroimaging software such as SPM, AFNI, FSL, and MRIcroGL. It consistently demonstrates comparable performance in both quantitative and qualitative analyses, ensuring reliable results.
 
-**Note:** fMROI is continuously improving and expanding its functionality. Stay tuned for future updates, as we strive to enhance the viewer capabilities and incorporate new Matlab toolboxes to further enhance your experience with fMROI.
+***Note:*** *fMROI is continuously improving and expanding its functionality. Stay tuned for future updates, as we strive to enhance the viewer capabilities and incorporate new Matlab toolboxes to further enhance your experience with fMROI.*
 
