@@ -1,4 +1,6 @@
-#fMROI
+<p style="text-align: center;">
+<h1 id="fmroi">fMROI</h1>
+</p>
 **<p style="text-align: center;">User-Friendly ROI Creation and Neuroimage Visualization Software</p>**
 
 <p align="center">
