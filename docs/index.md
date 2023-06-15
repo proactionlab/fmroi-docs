@@ -1,10 +1,11 @@
 fMROI
 =====
-**<p style="text-align: center;">User-Friendly ROI Creation and Neuroimage Visualization Software</p>**
 
 <p align="center">
 <img src="img/fmroi_logo.png" alt="fMROI Logo"/>
 </p>
+
+**<p style="text-align: center;">User-Friendly ROI Creation and Neuroimage Visualization Software</p>**
 
 fMROI is a powerful and user-friendly software designed to simplify ROI creation and enhance neuroimage visualization. Developed with a focus on ease of use and compatibility, fMROI offers a range of features that make it an ideal tool for researchers and practitioners in the field of neuroimaging. Visit our [github page](https://github.com/proactionlab/fmroi) to download fMROI and join us in collaborating on this innovative project.
 
