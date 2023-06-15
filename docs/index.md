@@ -17,7 +17,6 @@ fMROI is a powerful and user-friendly software designed to simplify ROI creation
 
 3. **Collaborative Platform:** Designed as a collaborative platform, fMROI facilitates teamwork and seamless integration of new tools. Its data structure prevents updates to ROI creation algorithms from interfering with the interface, and the software can be easily updated by importing new methods and templates.
 
-3. **Flawless Performance:** fMROI has been rigorously tested and validated against well-established neuroimaging software such as SPM, AFNI, FSL, and MRIcroGL. It consistently demonstrates comparable performance in both quantitative and qualitative analyses, ensuring reliable results.
 
 ***Note:*** *fMROI is continuously improving and expanding its functionality. Stay tuned for future updates, as we strive to enhance the viewer capabilities and incorporate new Matlab toolboxes to further enhance your experience with fMROI.*
 
