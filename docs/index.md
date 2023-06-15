@@ -1,18 +1,19 @@
-{!README.md!}
+#<p style="text-align: center;">fMROI</p>
+**<p style="text-align: center;">User-Friendly ROI Creation and Neuroimage Visualization Software</p>**
 
-# Welcome to Lumache's documentation!
+![fMROI Logo](img/fmroi_logo.png)
 
-fMROI
------
+fMROI is a powerful and user-friendly software designed to simplify ROI creation and enhance neuroimage visualization. Developed with a focus on ease of use and compatibility, fMROI offers a range of features that make it an ideal tool for researchers and practitioners in the field of neuroimaging. Visit our [github page](https://github.com/proactionlab/fmroi) to download fMROI and join us in collaborating on this innovative project.
 
-**Lumache** (/lu\'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients. It pulls data from the
-[Open Food Facts database](https://world.openfoodfacts.org/) and offers
-a *simple* and *intuitive* API.
+##Key Features
 
-Check out the [usage](usage) section for further information, including how to [install](usage#installation) the project.
+1. **Intuitive Interface:** fMROI provides an intuitive graphical user interface (GUI) that enables users to create complex ROIs with just a few clicks. The interactive design process allows for real-time visualization, saving hours of work and ensuring accuracy.
 
-!!! note
+2. **Compatibility and Flexibility:** With compatibility across different operating systems (Linux, Windows, and MacOS) and the ability to access all ROI creation functions via GUI or command line, fMROI offers flexibility and automation capabilities. Users can create scripts and automate routines.
 
-    This project is under active development.
+3. **Collaborative Platform:** Designed as a collaborative platform, fMROI facilitates teamwork and seamless integration of new tools. Its data structure prevents updates to ROI creation algorithms from interfering with the interface, and the software can be easily updated by importing new methods and templates.
+
+3. **Flawless Performance:** fMROI has been rigorously tested and validated against well-established neuroimaging software such as SPM, AFNI, FSL, and MRIcroGL. It consistently demonstrates comparable performance in both quantitative and qualitative analyses, ensuring reliable results.
+
+**Note:** fMROI is continuously improving and expanding its functionality. Stay tuned for future updates, as we strive to enhance the viewer capabilities and incorporate new Matlab toolboxes to further enhance your experience with fMROI.
 
