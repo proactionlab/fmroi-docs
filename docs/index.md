@@ -9,7 +9,7 @@ fMROI User Guide
 
 fMROI is a powerful and user-friendly software designed to simplify ROI creation and enhance neuroimage visualization. Developed with a focus on ease of use and compatibility, fMROI offers a range of features that make it an ideal tool for researchers and practitioners in the field of neuroimaging. Visit our [github page](https://github.com/proactionlab/fmroi) to download fMROI and join us in collaborating on this innovative project.
 
-###Key Features
+**Key Features:**
 
 1. **Intuitive Interface:** fMROI provides an intuitive graphical user interface (GUI) that enables users to create complex ROIs with just a few clicks. The interactive design process allows for real-time visualization, saving hours of work and ensuring accuracy.
 
