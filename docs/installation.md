@@ -41,7 +41,7 @@ Cloning fMROI from GitHub
 
 5. Use the following command to clone the repository:
 
-    ```python
+    ```console
     $ git clone git@github.com:proactionlab/fmroi
     ```
 
