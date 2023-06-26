@@ -39,13 +39,11 @@ Cloning fMROI from GitHub
 
 4. Open your preferred Git client and navigate to the desired directory where you want to clone fMROI.
 
-5. Use the following command to clone the repository:
+5. Use the following command to clone the repository. Git will prompt you to enter your passphrase (if you set one) to access the private key:
 
-    ```console
-    $ git clone git@github.com:proactionlab/fmroi
-    ```
-
-6. Git will prompt you to enter your passphrase (if you set one) to access the private key.
+```console
+$ git clone git@github.com:proactionlab/fmroi
+```
 
 
 Setting fMROI into MATLAB path
