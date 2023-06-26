@@ -41,9 +41,9 @@ Cloning fMROI from GitHub
 
 5. Use the following command to clone the repository:
 
-```
-$ git clone git@github.com:proactionlab/fmroi
-```
+    ```python
+    $ git clone git@github.com:proactionlab/fmroi
+    ```
 
 6. Git will prompt you to enter your passphrase (if you set one) to access the private key.
 
