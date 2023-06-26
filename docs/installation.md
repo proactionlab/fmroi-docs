@@ -20,7 +20,7 @@ fMROI Direct Download Installation:
 
 3. Select "Download ZIP" to save the compressed file to your computer;
 
-4. Extract the compressed folder in a place you have access in your computer (usually /home/[user name]/matlab/fmroi in linux or C:\Users\[user name]\Documents\matlab\fmroi in windows). 
+4. Extract the compressed folder in a place you have access in your computer (usually `/home/[user name]/matlab/fmroi` in linux or `C:\Users\[user name]\Documents\matlab\fmroi` in windows). 
 
 ![Download Zip file](img/zipdownload.png)
 
