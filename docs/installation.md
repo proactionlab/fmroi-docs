@@ -57,7 +57,10 @@ Setting fMROI into MATLAB path
 ![Set fMROI to Matlab path](img/setpath.png)
 
 It is also possible to add the fMROI folder to Matlab’s path by typing the following command in the MATLAB Command window:
+
+```matlab
 addpath [path to the fMROI root folder]
+```
 
 Examples:
 
