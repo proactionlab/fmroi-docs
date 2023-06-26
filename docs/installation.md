@@ -21,19 +21,6 @@ fMROI Direct Download Installation:
 
 ![Download Zip file](img/zipdownload.png)
 
-It is also possible to add the fMROI folder to Matlab’s path by typing the following command in the MATLAB Command window:
-addpath [path to the fMROI root folder]
-
-Examples:
-- windows
-```matlab
->>> addpath C:\Users\[user name]\Documents\matlab\fmroi
-```
-
-- Linux / MacOS
-```matlab
->>> addpath /home/[user name]/matlab/fmroi
-```
 
 
 Cloning fMROI from GitHub
@@ -63,6 +50,20 @@ Setting fMROI into MATLAB path
 7. Finally, in the "Set Path" window, click "Save".
 
 ![Set fMROI to Matlab path](img/setpath.png)
+
+It is also possible to add the fMROI folder to Matlab’s path by typing the following command in the MATLAB Command window:
+addpath [path to the fMROI root folder]
+
+Examples:
+- windows
+```matlab
+>>> addpath C:\Users\[user name]\Documents\matlab\fmroi
+```
+
+- Linux / MacOS
+```matlab
+>>> addpath /home/[user name]/matlab/fmroi
+```
 
 Running fMROI
 -------------
