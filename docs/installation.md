@@ -45,8 +45,6 @@ Cloning fMROI from GitHub
 $ git clone git@github.com:proactionlab/fmroi
 ```
 
-<br/>
-
 *If you don't have Git installed in your computer or if you are not sure, please check [this simple guide](https://github.com/git-guides/install-git).*
 
 Setting fMROI into MATLAB path
