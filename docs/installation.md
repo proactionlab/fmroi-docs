@@ -55,6 +55,7 @@ It is also possible to add the fMROI folder to Matlab’s path by typing the fol
 addpath [path to the fMROI root folder]
 
 Examples:
+
 - windows
 ```matlab
 >>> addpath C:\Users\[user name]\Documents\matlab\fmroi
