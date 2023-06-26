@@ -15,8 +15,11 @@ fMROI Direct Download Installation:
 -----------------------------------
 
 1. Access the fMROI GitHub webpage: [fMROI GitHub webpage](https://github.com/proactionlab/fmroi)
+
 2. Click the "<> Code" button (green button);
+
 3. Select "Download ZIP" to save the compressed file to your computer;
+
 4. Extract the compressed folder in a place you have access in your computer (usually /home/[user name]/matlab/fmroi in linux or C:\Users\[user name]\Documents\matlab\fmroi in windows). 
 
 ![Download Zip file](img/zipdownload.png)
@@ -27,18 +30,23 @@ Cloning fMROI from GitHub
 -------------------------
 
 1. Access the fMROI GitHub webpage: [fMROI GitHub webpage](https://github.com/proactionlab/fmroi)
+
 2. Click the "Code" button (green button) and select your preferred cloning method: "HTTPS", "SSH", or "GitHub CLI". In this guide, we will describe the SSH method.
+
 3. Copy the SSH URL provided.
 
     ![Cloning fMROI from GitHub](img/cloning.png)
 
 4. Open your preferred Git client and navigate to the desired directory where you want to clone fMROI.
+
 5. Use the following command to clone the repository:
-    
-    ```console
+
+    ```
     $ git clone git@github.com:proactionlab/fmroi.git
     ```
+
 6. Git will prompt you to enter your passphrase (if you set one) to access the private key.
+
 
 Setting fMROI into MATLAB path
 ------------------------------
@@ -55,7 +63,7 @@ addpath [path to the fMROI root folder]
 
 Examples:
 
-- windows
+- Windows
 ```matlab
 >>> addpath C:\Users\[user name]\Documents\matlab\fmroi
 ```
