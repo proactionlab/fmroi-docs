@@ -42,7 +42,15 @@ After loading an image using any of the three available options, an entry is gen
 Controls of Image Visualization Aspect
 ---------------------------------------
 
-The viewer contains 4 axes that display 3 planar slices (axial, coronal, and sagittal) and a volumetric render. Every image is associated with a colormap selected in the image colormap dropdown menu (`2`). fMROI comes with several Matlab default colormaps, but it is also possible to load a custom colormap or a Lookup table (LUT). The custom colormap must be an nx3 RGB array with values between 0 to 1 stored in a `.txt` or `.mat` file. To load a custom colormap file, just select "custom" from the colormap dropdown menu and it will pop up a window for selecting the `.txt` or `.mat` file. The color LUT must have the fields: 1. 'No' or 'Index'; 2. 'Label_Name'; 3. 'R'; 4. 'G'; 5. 'B', and must be stored in a `.tsv` (tab-separated value) or `.mat` (matlab table). To load the color LUT, select LUT from the colormap dropdown menu and it will pop up a window to select the LUT file. 
+The viewer contains 4 axes that display 3 planar slices (axial, coronal, and sagittal) and a volumetric render. Every image is associated with a colormap selected in the image colormap dropdown menu (`2`). fMROI comes with several Matlab default colormaps, but it is also possible to load a custom colormap or a Lookup table (LUT). The custom colormap must be an nx3 RGB array with values between 0 to 1 stored in a `.txt` or `.mat` file. To load a custom colormap file, just select "custom" from the colormap dropdown menu and it will pop up a window for selecting the `.txt` or `.mat` file. The color LUT must have the fields: 1. 'No' or 'Index'; 2. 'Label_Name'; 3. 'R'; 4. 'G'; 5. 'B', and must be stored in a `.tsv` (tab-separated value) or `.mat` (matlab table). To load the color LUT, select LUT from the colormap dropdown menu and it will pop up a window to select the LUT file.
+
+| Index | Label_Name | R   | G   | B   |
+|-------|------------|-----|-----|-----|
+| 0     | label_1    | 0.0 | 0.0 | 0.0 |
+| 1     | label_2    | 0.1 | 0.1 | 0.1 |
+| n     | label_n    | r_n | g_n | b_n |
+
+
 
 By default, fMROI doesn’t display the volumetric render of the images. To create an image render, just tick the checkbox "3D" (`1`). After displaying the volumetric image, you can select the color of the volume from the render color dropdown menu (`3`). 
 
