@@ -66,3 +66,7 @@ If you want to change the image contrast, i.e., specify a range of the colormap 
 *Please note that only the selected image will be affected by the control changes.*
 
 
+Navigation and coordinates
+--------------------------
+
+![Image coordinates](img/cursor_controls.png)
