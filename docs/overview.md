@@ -39,24 +39,29 @@ After loading an image using any of the three available options, an entry is gen
 
 *Please note that in the fMROI table of loaded images, the top image is represented by the last line, while the bottom image is represented by the first line.*
 
-Controls of Image Visualization Aspect
----------------------------------------
+Image Visualization Aspect
+--------------------------
 
-The viewer contains 4 axes that display 3 planar slices (axial, coronal, and sagittal) and a volumetric render. Every image is associated with a colormap selected in the image colormap dropdown menu (`2`). fMROI comes with several Matlab default colormaps, but it is also possible to load a custom colormap or a Lookup table (LUT). The custom colormap must be an nx3 RGB array with values between 0 to 1 stored in a `.txt` or `.mat` file. To load a custom colormap file, just select "custom" from the colormap dropdown menu and it will pop up a window for selecting the `.txt` or `.mat` file. The color LUT must have the fields: 1. 'No' or 'Index'; 2. 'Label_Name'; 3. 'R'; 4. 'G'; 5. 'B', and must be stored in a `.tsv` (tab-separated value) or `.mat` (matlab table). To load the color LUT, select LUT from the colormap dropdown menu and it will pop up a window to select the LUT file.
+**Controls**
+
+![Controls of Image Visualization Aspect](img/image_controls.png)
+
+The viewer contains 4 axes that display 3 planar slices (axial, coronal, and sagittal) and a volumetric render. Every image is associated with a colormap selected in the image colormap dropdown menu (`2`). fMROI comes with several Matlab default colormaps, but it is also possible to load a custom colormap or a Lookup table (LUT). The custom colormap must be an nx3 RGB array with values between 0 to 1 stored in a `.txt` or `.mat` file. To load a custom colormap file, just select "custom" from the colormap dropdown menu and it will pop up a window for selecting the `.txt` or `.mat` file. The color LUT must have the fields: 1. 'No' or 'Index'; 2. 'Label_Name'; 3. 'R'; 4. 'G'; 5. 'B', and must be stored in a `.tsv` (tab-separated value) or `.mat` (matlab table). The RGB values must be integers between 0 and 255. To load the color LUT, select LUT from the colormap dropdown menu and it will pop up a window to select the LUT file.
+
+Example of Color LUT:
 
 | Index | Label_Name | R   | G   | B   |
 |-------|------------|-----|-----|-----|
-| 0     | label_1    | 0.0 | 0.0 | 0.0 |
-| 1     | label_2    | 0.1 | 0.1 | 0.1 |
+| 0     | label_1    | 0   | 0   | 0   |
+| 1     | label_2    | 255 | 255 | 255 |
 | n     | label_n    | r_n | g_n | b_n |
-
 
 
 By default, fMROI doesn’t display the volumetric render of the images. To create an image render, just tick the checkbox "3D" (`1`). After displaying the volumetric image, you can select the color of the volume from the render color dropdown menu (`3`). 
 
 Once the images are displayed, you can change their visualization aspects through the slide bars.
-Minimum and maximum threshold (minT and maxT) will define the image values to be displayed. If minT is lower than maxT, fMROI displays only those voxels that have intensity higher than minT AND lower than maxT. Otherwise, if the minT is higher than maxT, it displays those voxels that have values higher than minT OR lower than maxT.
-If you want to change the image contrast, i.e., specify a range of the colormap to be displayed, you must move the sliders Max and Min color. Finally, for changing the image opacity, you just need to move the sliders "Slice opac" to give transparency to planar images and the slider "Render opac" to give transparency to the render.
+Minimum and maximum threshold (`4`) will define the image values to be displayed. If "Min thrs" is lower than "Max thrs", fMROI displays only those voxels that have intensity higher than "Min thrs" AND lower than "Max thrs". Otherwise, if the "Min thrs" is higher than "Max thrs", it displays those voxels that have values higher than "Min thrs" OR lower than "Max thrs".
+If you want to change the image contrast, i.e., specify a range of the colormap to be displayed, you must move the sliders Max and Min color (`5`). Finally, for changing the image opacity, you just need to move the sliders "Slice opac" to give transparency to planar images and the slider "Render opac" to give transparency to the render (`6`).
 
 *Please note that only the selected image will be affected by the control changes.*
 
