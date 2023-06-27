@@ -12,9 +12,9 @@ The fMROI Graphical User Interface (GUI) is designed to provide users with a use
 
 3. **ROI generation and manipulation section:** This section is divided into three tabs: 
 
-- **ROI Table:** Provides a detailed overview and management of the created ROIs, allowing users to easily modify and organize them.
-- **Gen ROI:** Offers tools and functionalities for generating ROIs, simplifying the complex process with user-friendly options.
-- **Logic Op:** Enables users to perform logical operations on the ROIs, such as combining and selecting regions of interest. This feature enhances the versatility of the software for neuroimage analysis.
+    - **ROI Table:** Provides a detailed overview and management of the created ROIs, allowing users to easily modify and organize them.
+    - **Gen ROI:** Offers tools and functionalities for generating ROIs, simplifying the complex process with user-friendly options.
+    - **Logic Op:** Enables users to perform logical operations on the ROIs, such as combining and selecting regions of interest. This feature enhances the versatility of the software for neuroimage analysis.
 
 The fMROI GUI aims to streamline the workflow of ROI creation and manipulation, providing researchers with an efficient and comprehensive tool for their neuroimage analysis needs.
 
