@@ -74,9 +74,9 @@ Navigation and coordinates
 
 - In fMROI, you have multiple ways to change the cursor position and navigate through the image volume:
 
-    1. **Clicking the images**: Click with the left mouse button on the desired position in one of the three planar images.
-    2. **Using arrow keys**: Press the up (&uarr;) or down (&darr;) arrow key to move the coronal plane, left (&larr;) or right (&rarr;) arrow keys to move the sagittal plane, and PgUp or PgDn keys to move the axial plane.
-    3. **Entering coordinates**: Enter the coordinates (`2`) in voxel coordinates or in RAS coordinates in centimeters.
+    - **Clicking the images**: Click with the left mouse button on the desired position in one of the three planar images.
+    - **Using arrow keys**: Press the up (&uarr;) or down (&darr;) arrow key to move the coronal plane, left (&larr;) or right (&rarr;) arrow keys to move the sagittal plane, and PgUp or PgDn keys to move the axial plane.
+    - **Entering coordinates**: Enter the coordinates (`2`) in voxel coordinates or in RAS coordinates in centimeters.
 
 - In fMROI, you can easily view the cursor position and mouse pointer position:
 
