@@ -63,7 +63,7 @@ Maxkmask searches for the kvox highest-intensity voxels of the srcvol contained 
 Regiongrowingmask
 -----------------
 
-regiongrowingmask is a region growing algorithm that groups neighboring voxels from a seed iteratively according to a rule. The regiongrowingmask has three rules for growing (grwmode), ascending, descending and similarity to the seed, and three other rules for stopping growth, maximum number of voxels (nvox), region set by a mask (premask), and 
+Regiongrowingmask is a region growing algorithm that groups neighboring voxels from a seed iteratively according to a rule. The regiongrowingmask has three rules for growing (grwmode), ascending, descending and similarity to the seed, and three other rules for stopping growth, maximum number of voxels (nvox), region set by a mask (premask), and 
 maximum difference in values between the seed and its neighbors (diffratio).
 
 - **Syntax:**
@@ -79,7 +79,7 @@ maximum difference in values between the seed and its neighbors (diffratio).
     >> *'descending'* - searches for the neighbor with the minimum value every each iteration.<br>
     >> *'similarity'* - searches for the neighbor with the most similar value to the seed.<br>
 
-    > **nvox:** Integer that defines the maximum number of voxels in ROI.<br>
+    > **nvox:** Integer that defi   nes the maximum number of voxels in ROI.<br>
     > **premask:** Binary 3D matrix with same size as srcvol that defines the region where the region growing will be applied. If premask is not a binary matrix, regiongrowingmask will binarize it considering TRUE all non-zero elements.<br>
 
 - **Outputs:**
@@ -89,8 +89,57 @@ maximum difference in values between the seed and its neighbors (diffratio).
 Img2mask
 --------
 
+Img2mask creates a mask determined by the minthrs and maxthrs intensity thresholds. If minthrs is lower than maxthrs, img2mask set to zero those voxels that have values that are lower than minthrs and bigger than maxthrs, i.e., mask = srcvol >= minthrs & srcvol <= maxthrs. Otherwise, if minthrs is bigger than maxthrs, img2mask set to zero those voxels that have values lower than minthrs and bigger that maxthrs, i.e., mask = srcvol >= minthrs | srcvol <= maxthrs;
+
+- **Syntax:**
+    > *mask = img2mask(srcvol, minthrs, maxthrs)*<br>
+
+- **Inputs:**
+    > **srcvol:** 3D matrix, usually a data volume from a NIfTI file.<br>
+    > **minthrs:** Scalar - Minimum threshold intensity.<br>
+    > **maxthrs:** Scalar - Maximum threshold intensity.<br>
+
+- **Outputs:**
+    > **mask:** Binary 3D matrix with the same size as srcvol.<br>
+
+
 Contiguousclustering
 --------------------
 
+Contiguousclustering group contiguous volxels (if their faces touch). If minthrs is lower than maxthrs, contiguousclustering consider as input those voxels that have values that are lower than minthrs and bigger than maxthrs. Otherwise, if minthrs is bigger than maxthrs, it considers those voxels that have values lower than minthrs and bigger that maxthrs. All clusters that have less elements than mincltsz are eliminated.
+
+- **Syntax:**
+    > *mask = contiguousclustering(data,minthrs,maxthrs,mincltsz)*<br>
+
+- **Inputs:**
+    > **srcvol:** 3D matrix, usually a data volume from a nifti file.<br>
+    > **minthrs:** Scalar - Minimum threshold intensity.<br>
+    > **maxthrs:** Scalar - Maximum threshold intensity.<br>
+    > **mincltsz:** Scalar - Minimum cluster size, clusters that have less elements than mincltsz are eliminated.<br>
+
+- **Outputs:**
+    > **mask:** Integer 3D matrix with the same size as srcvol. The non-zero values of mask are the indexes of each clusters.<br>
+
+
 Drawingmask
 ----------
+
+Drawingmask is a tool for generating ROIs from freehand drawings layer by layer over planar images. This tool does not have a standalone version, so it works only alongside the fMROI graphical interface.
+
+- **Settings:**
+    > **Source image:** Selected image in the list of loaded images.<br>
+    > **Working ROI:** defines where the drawn ROI will be placed.
+    >> *'new'* - create a new ROI variable and list it in ROI table.<br>
+    >> *'roi_name'* - place the drawn ROI over the selected ROI (listed in ROI Table).<br>
+
+    > **Working axis:** defines in which planar image the ROI draw will take place (Axial, Coronal or Sagittal).<br>
+
+    > **Drawing method:** defines which method will be used to draw the ROI.
+    >> *Brush* - in this method it is necessary to click and hold the left mouse button while drawing the ROI outline.<br>
+    >> *Closed shape* - in this method the vertices are created clicking the left mouse button. Double-click to close the polygon.<br>
+
+    > **Drawing tools:** Tools for creating/editing ROI drawings.
+    >> *Draw* - Enable drawing the ROI in the specified axis.<br>
+    >> *Clear* - Clears the current ROI drawing.<br>
+    >> *Add* - Converts the current draw in a mask and insert it into the selected ROI. The mask index will be 1 if 'working ROI' is 'new' otherwise it will be the highest value of the selected ROI.<br>
+    >> *Rem* - Fills with zeros the drawn ROI and updates the selected ROI.<br>
