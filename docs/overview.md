@@ -80,9 +80,9 @@ Navigation and coordinates
 
 - In fMROI, you can easily view the cursor position and mouse pointer position:
 
-(`2`) **Cursor Position**: The editable fields display the cursor position based on typed input or clicked position.
+    (`2`) **Cursor Position**: The editable fields display the cursor position based on typed input or clicked position.
 
-(`3`) **Mouse Pointer Position**: The mouse pointer position coordinates are updated when you hover over the planar images.
+    (`3`) **Mouse Pointer Position**: The mouse pointer position coordinates are updated when you hover over the planar images.
 
 - To customize the cursor style or hide it: Click the "+" button (`1`) to toggle between different cursor styles: full cross, small cross, and hide styles.
 <br/><br/>
