@@ -8,9 +8,8 @@ spheremask creates a spherical mask centered on curpos with the same dimension a
  
 - **Syntax:**
 
-```console
-mask = spheremask(srcvol, curpos, nvoxels, mode)
-```
+    > *mask = spheremask(srcvol, curpos, nvoxels, mode)*
+
  
 - **Inputs:**
 
