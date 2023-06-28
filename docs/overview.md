@@ -69,8 +69,33 @@ If you want to change the image contrast, i.e., specify a range of the colormap 
 Navigation and coordinates
 --------------------------
 
+
 ![Image coordinates](img/cursor_controls.png)
 
-arrow &uarr; 
+- In fMROI, you have multiple ways to change the cursor position and navigate through the image volume:
 
-![Image coordinates](img/axis_floatingmenu.png)
+1. **Clicking the images**: Click with the left mouse button on the desired position in one of the three planar images.
+2. **Using arrow keys**: Press the up (&uarr;) or down (&darr;) arrow key to move the coronal plane, left (&larr;) or right (&rarr;) arrow keys to move the sagittal plane, and PgUp or PgDn keys to move the axial plane.
+3. **Entering coordinates**: Enter the coordinates (`2`) in voxel coordinates or in RAS coordinates in centimeters.
+
+- In fMROI, you can easily view the cursor position and mouse pointer position:
+
+(`2`) **Cursor Position**: The editable fields display the cursor position based on typed input or clicked position.
+
+(`3`) **Mouse Pointer Position**: The mouse pointer position coordinates are updated when you hover over the planar images.
+
+- To customize the cursor style or hide it: Click the "+" button (`1`) to toggle between different cursor styles: full cross, small cross, and hide styles.
+
+- fMROI also provides axis windowing options. When you hover the mouse over the images, a floating menu will appear in the top right corner.
+
+![Image floating menu](img/axis_floatingmenu.png)
+
+(`1`) **Toggle Grid View**: Switch between the grid view (showing four images) and the single view (showing only the selected image).
+
+(`2`) **Pan Tool**: Move the images within the display plane. Select the pan tool, click and hold the left mouse button, drag the image to the desired position, and release the left mouse button.
+
+(`3`) **Zoom-in Tool**: Click on a position or select a region by holding the left mouse button and moving the pointer to another position.
+
+(`4`) **Zoom-out Tool**: Click on the image to zoom-out.
+
+(`5`) **Restore Default Visualization**: Restore the default visualization settings.
