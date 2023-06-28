@@ -70,3 +70,7 @@ Navigation and coordinates
 --------------------------
 
 ![Image coordinates](img/cursor_controls.png)
+
+arrow &uarr; 
+
+![Image coordinates](img/axis_floatingmenu.png)
