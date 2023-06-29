@@ -10,7 +10,7 @@ The fMROI Graphical User Interface (GUI) is designed to provide users with a use
 
 2. **Control of image visualization aspect:** This section enables users to define various aspects of image visualization. Users have the flexibility to choose colormap, threshold, transparency, cursor position, and stacking order of images. These controls allow for customization and adjustment of the visual representation of the neuroimages.
 
-3. **ROI generation and manipulation section:** This section is divided into three tabs: 
+3. **ROI design and manipulation section:** This section is divided into three tabs: 
 
     - **ROI Table:** Provides a detailed overview and management of the created ROIs, allowing users to easily modify and organize them.
     - **Gen ROI:** Offers tools and functionalities for generating ROIs, simplifying the complex process with user-friendly options.
@@ -99,3 +99,43 @@ Navigation and coordinates
 (`4`) **Zoom-out Tool**: Click on the image to zoom-out.
 
 (`5`) **Restore Default Visualization**: Restore the default visualization settings.
+
+
+ROI design and manipulation
+---------------------------
+
+fMROI offers an intuitive interface that makes it easy to create and manipulate ROIs. The ROI creation section is divided into three user-friendly tabs, each providing different functionalities. Users can conveniently design their ROIs while instantly observing real-time changes in the results, ensuring a smooth and efficient ROI creation process. Creating ROIs in fMROI can be as simple as:
+
+1. Clicking on the desired position or directly entering coordinates in the navigator to select the center of the ROI.
+2. Choosing the desired ROI type (e.g., spherical, cubic, region-growing) and specifying parameters like radius or number of voxels.
+3. Clicking a button to generate the ROI.
+It is also easy to combine ROIs or calculate the conjunction between them in the logical operations tab.
+
+![ROI creation tabs](img/roi_tabs.png)
+
+**ROI table tab**
+
+In the first tab (`1`), you will find a list of under-construction ROIs. The ROI Table in this tab allows you to manually assign ROI indices, names, colors (RGB values), and transparency (A). You can easily edit the ROI Table to customize your ROIs according to your requirements.
+
+Once you have completed creating the ROIs, you have two options for saving them:
+
+- Save as Independent Binary NIfTI Files: By ticking the "bin masks" option, you can save each ROI as an independent binary NIfTI file. This option is useful when you need individual ROIs for further analysis or visualization.
+
+- Save as Atlas + LUT: By ticking the "Atlas + LUT" option, you can save the ROIs in a single NIfTI file with different indices. This format combines an atlas-like image with a lookup table that contains ROI Table values. This option is helpful when you want to store multiple ROIs in a compact manner.
+
+**ROI Generation tab (Gen ROI)**
+
+The second tab (`2`) provides tools for generating ROIs using different algorithms. Start by selecting an algorithm from the Method dropdown menu. Once you select an algorithm, its specific interface for setting the parameters will be displayed.
+
+Pay attention to the "Find Max" button, which helps you identify the voxel with the highest value based on the selected algorithm and its parameters. It's worth noting that the search is limited to the ROI defined by the interface parameters, even if no ROI is created practically. This feature assists in exploring potential regions of interest within your data.
+
+**Logical Operations tab (Logic Op)**
+
+The third tab (`3`) enables performing logical operations between ROIs. You can create complex combinations of ROIs using logical operators. Let's consider the example ilustrated in the figure above:
+
+- Conjunction (AND): Combine two loaded images using the conjunction operation.
+- Disjunction (OR): Perform a logical OR operation between the previous conjunction output and an under-construction ROI.
+- Conjunction with Negation (NOT): Finally, combine the previous output with the negation of another under-construction ROI using the conjunction operator.
+
+*It is worth noting that fMROI allows you to perform logical operations between both loaded images and under-construction ROIs. If the loaded images are not binary, they are automatically converted into binary format using the **img2mask** algorithm, which considers the selected minimum and maximum thresholds.*
+
