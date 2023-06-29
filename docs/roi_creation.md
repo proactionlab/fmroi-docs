@@ -44,6 +44,7 @@ Spheremask creates a spherical mask centered on *curpos* with the same dimension
     - **mask:** Binary 3D matrix with the same size as *srcvol*. 
  
 
+![Selecting the source image](img/roigen/sphere.png)
 
 
 Cubicmask
