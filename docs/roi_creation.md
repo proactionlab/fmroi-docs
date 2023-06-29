@@ -13,6 +13,8 @@ fMROI provides a user-friendly interface for creating and manipulating ROIs. In 
     - **minthrs:** Minimum threshold intensity. It can be defined in the “Min thrs” slider.
     - **maxthrs:** Maximum threshold intensity. It can be defined in the “Max thrs” slider.
 <br><br>
+
+
 - **Selecting the source image**
 
 ![Selecting the source image](img/select_srcimg.png)
