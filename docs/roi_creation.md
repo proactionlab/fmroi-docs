@@ -12,6 +12,12 @@ fMROI provides a user-friendly interface for creating and manipulating ROIs. In 
     - **seed:** Source image coordinate (usually *curpos*) used for some calculation.
     - **minthrs:** Minimum threshold intensity. It can be defined in the “Min thrs” slider.
     - **maxthrs:** Maximum threshold intensity. It can be defined in the “Max thrs” slider.
+<br><br>
+- **Selecting the source image**
+
+![Selecting the source image](img/select_srcimg.png)
+
+***Attention:** For all ROI creation algorithms in fMROI, the source image (srcimg) must be chosen by clicking on the name of the corresponding image in the table of loaded images (shown in bold).*
 
 
 Spheremask
