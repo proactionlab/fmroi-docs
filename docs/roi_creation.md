@@ -1,12 +1,23 @@
 ROI Creation
 ============
 
-![ROI creation tabs](img/roi_tabs.png)
+fMROI provides a user-friendly interface for creating and manipulating ROIs. In this guide, we will walk you through the process of creating ROIs using the fMROI software.
+
+- **Glossary of the variables**
+
+    - **curpos:** Refers to current position, that here is the cursor position.
+    - **srcvol:** Source volume, i.e., the volumetric image used to calculate the ROIs.
+    - **nvoxels:** Number of voxels. It relates to radius/edge size or number of voxels inside an ROI.
+    - **premask:** Binary volumetric image used to constrain the region to be analyzed.
+    - **seed:** Source image coordinate (usually *curpos*) used for some calculation.
+    - **minthrs:** Minimum threshold intensity. It can be defined in the “Min thrs” slider.
+    - **maxthrs:** Maximum threshold intensity. It can be defined in the “Max thrs” slider.
+
 
 Spheremask
 ----------
 
-Spheremask creates a spherical mask centered on curpos with the same dimension as srcvol with radius/volume equal to nvoxels. The mask is a binary array where the elements that belong to the sphere mask are set to 1 and all other voxels are set to 0.
+Spheremask creates a spherical mask centered on *curpos* with the same dimension as *srcvol* with radius/volume equal to *nvoxels*. The mask is a binary array where the elements that belong to the sphere mask are set to 1 and all other voxels are set to 0.
  
 - **Syntax:**
 
@@ -18,11 +29,11 @@ Spheremask creates a spherical mask centered on curpos with the same dimension a
     - **srcvol:** 3D matrix, usually a data volume from a nifti file.<br>
     - **curpos:** Position where the sphere mask will be centered.<br>
     - **nvoxels:** Radius or Volume size in voxels.<br>
-    - **mode:** String with the keywords 'radius' or 'volume' that defines if nvoxels is the number of voxels that compose the ROI (volume) or the radius size (radius).<br>
+    - **mode:** String with the keywords 'radius' or 'volume' that defines if *nvoxels* is the number of voxels that compose the ROI (volume) or the radius size (radius).<br>
 
 - **Output:**
 
-    - **mask:** Binary 3D matrix with the same size as srcvol. 
+    - **mask:** Binary 3D matrix with the same size as *srcvol*. 
  
 
 
@@ -30,28 +41,28 @@ Spheremask creates a spherical mask centered on curpos with the same dimension a
 Cubicmask
 ----------
 
-Cubicmask creates a cubic mask centered on curpos with the same dimension as srcvol with edge/volume equal to nvoxels. The mask is a binary array where the elements that belong to the cubic mask are set to 1 and all other voxels are set to 0.
+Cubicmask creates a cubic mask centered on *curpos* with the same dimension as *srcvol* with edge/volume equal to *nvoxels*. The mask is a binary array where the elements that belong to the cubic mask are set to 1 and all other voxels are set to 0.
  
 - **Syntax:**
 
-    - *mask = cubicmask(vol, curpos, nvoxel, mode)*
+    - *mask = cubicmask(srcvol, curpos, nvoxel, mode)*
  
 - **Inputs:**
 
     - **srcvol:** 3D matrix, usually a data volume from a nifti file.<br>
     - **curpos:** Position where the cubic mask will be centered.<br>
     - **nvoxels:** Edge or Volume size in voxels.<br>
-    - **mode:** String with the keywords 'edge' or 'volume' that defines if nvoxels is the number of voxels that compose the ROI (volume) or the edge size (edge).<br>
+    - **mode:** String with the keywords 'edge' or 'volume' that defines if *nvoxels* is the number of voxels that compose the ROI (volume) or the edge size (edge).<br>
 
 - **Output:**
 
-    - **mask:** Binary 3D matrix with the same size as srcvol.<br>
+    - **mask:** Binary 3D matrix with the same size as *srcvol*.<br>
 
 
 Maxkmask
 --------
 
-Maxkmask searches for the kvox highest-intensity voxels of the srcvol contained in the region defined by premask. 
+Maxkmask searches for the *kvox* highest-intensity voxels of the *srcvol* contained in the region defined by *premask*. 
 
 - **Syntax:**
 
@@ -60,19 +71,18 @@ Maxkmask searches for the kvox highest-intensity voxels of the srcvol contained 
 - **Inputs:**
 
     - **srcvol:** 3D matrix, usually a data volume from a nifti file.<br>
-    - **premask:** Binary 3D matrix with same size as srcvol. If premask is not a binary matrix, maxkmask will consider as ROI all non-zero elements.<br>
+    - **premask:** Binary 3D matrix with same size as *srcvol*. If premask is not a binary matrix, maxkmask will consider as ROI all non-zero elements.<br>
     - **kvox:** Integer that defines the number of non-zero elements in mask.<br>
 
 - **Output:**
 
-    - **mask:** Binary 3D matrix with the same size as srcvol.<br>
+    - **mask:** Binary 3D matrix with the same size as *srcvol*.<br>
 
 
 Regiongrowingmask
 -----------------
 
-Regiongrowingmask is a region growing algorithm that groups neighboring voxels from a seed iteratively according to a rule. The regiongrowingmask has three rules for growing (grwmode), ascending, descending and similarity to the seed, and three other rules for stopping growth, maximum number of voxels (nvox), region set by a mask (premask), and 
-maximum difference in values between the seed and its neighbors (diffratio).
+Regiongrowingmask is a region growing algorithm that groups neighboring voxels from a *seed* iteratively according to a rule. The regiongrowingmask has three rules for growing (grwmode), ascending, descending and similarity to the *seed*, and three other rules for stopping growth, maximum number of voxels (*nvox*), region set by a mask (*premask*), and maximum difference in values between the *seed* and its neighbors (*diffratio*).
 
 - **Syntax:**
 
@@ -90,17 +100,17 @@ maximum difference in values between the seed and its neighbors (diffratio).
         - *'similarity'* - searches for the neighbor with the most similar value to the seed.<br>
 
     - **nvox:** Integer that defi   nes the maximum number of voxels in ROI.<br>
-    - **premask:** Binary 3D matrix with same size as srcvol that defines the region where the region growing will be applied. If premask is not a binary matrix, regiongrowingmask will binarize it considering TRUE all non-zero elements.<br>
+    - **premask:** Binary 3D matrix with same size as *srcvol* that defines the region where the region growing will be applied. If premask is not a binary matrix, regiongrowingmask will binarize it considering TRUE all non-zero elements.<br>
 
 - **Outputs:**
 
-    - **mask:** Binary 3D matrix with the same size as srcvol.<br>
+    - **mask:** Binary 3D matrix with the same size as *srcvol*.<br>
 
 
 Img2mask
 --------
 
-Img2mask creates a mask determined by the minthrs and maxthrs intensity thresholds. If minthrs is lower than maxthrs, img2mask set to zero those voxels that have values that are lower than minthrs and bigger than maxthrs, i.e., mask = srcvol -= minthrs & srcvol <= maxthrs. Otherwise, if minthrs is bigger than maxthrs, img2mask set to zero those voxels that have values lower than minthrs and bigger that maxthrs, i.e., mask = srcvol -= minthrs | srcvol <= maxthrs;
+Img2mask creates a mask determined by the *minthrs* and *maxthrs* intensity thresholds. If *minthrs* is lower than *maxthrs*, img2mask set to zero those voxels that have values that are lower than *minthrs* and bigger than *maxthrs*, i.e., *mask = srcvol >= minthrs & srcvol <= maxthrs*. Otherwise, if *minthrs* is bigger than *maxthrs*, img2mask set to zero those voxels that have values lower than *minthrs* and bigger that *maxthrs*, i.e., *mask = srcvol >= minthrs | srcvol <= maxthrs*;
 
 - **Syntax:**
 
@@ -114,17 +124,17 @@ Img2mask creates a mask determined by the minthrs and maxthrs intensity threshol
 
 - **Outputs:**
 
-    - **mask:** Binary 3D matrix with the same size as srcvol.<br>
+    - **mask:** Binary 3D matrix with the same size as *srcvol*.<br>
 
 
 Contiguousclustering
 --------------------
 
-Contiguousclustering group contiguous volxels (if their faces touch). If minthrs is lower than maxthrs, contiguousclustering consider as input those voxels that have values that are lower than minthrs and bigger than maxthrs. Otherwise, if minthrs is bigger than maxthrs, it considers those voxels that have values lower than minthrs and bigger that maxthrs. All clusters that have less elements than mincltsz are eliminated.
+Contiguousclustering group contiguous volxels (if their faces touch). If *minthrs* is lower than *maxthrs*, contiguousclustering consider as input those voxels that have values that are lower than *minthrs* and bigger than *maxthrs*. Otherwise, if *minthrs* is bigger than *maxthrs*, it considers those voxels that have values lower than *minthrs* and bigger that *maxthrs*. All clusters that have less elements than mincltsz are eliminated.
 
 - **Syntax:**
 
-    - *mask = contiguousclustering(data,minthrs,maxthrs,mincltsz)*<br>
+    - *mask = contiguousclustering(data, minthrs, maxthrs, mincltsz)*<br>
 
 - **Inputs:**
 
@@ -135,7 +145,7 @@ Contiguousclustering group contiguous volxels (if their faces touch). If minthrs
 
 - **Outputs:**
 
-    - **mask:** Integer 3D matrix with the same size as srcvol. The non-zero values of mask are the indexes of each clusters.<br>
+    - **mask:** Integer 3D matrix with the same size as *srcvol*. The non-zero values of mask are the indexes of each clusters.<br>
 
 
 Drawingmask
