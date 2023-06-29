@@ -1,6 +1,8 @@
 ROI Creation
 ============
 
+![ROI creation tabs](img/roi_tabs.png)
+
 Spheremask
 ----------
 
