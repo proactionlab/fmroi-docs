@@ -26,10 +26,10 @@ Spheremask creates a spherical mask centered on *curpos* with the same dimension
  
 - **Inputs:**
 
-    - **srcvol:** 3D matrix, usually a data volume from a nifti file.<br>
-    - **curpos:** Position where the sphere mask will be centered.<br>
-    - **nvoxels:** Radius or Volume size in voxels.<br>
-    - **mode:** String with the keywords 'radius' or 'volume' that defines if *nvoxels* is the number of voxels that compose the ROI (volume) or the radius size (radius).<br>
+    - **srcvol:** 3D matrix, usually a data volume from a nifti file.
+    - **curpos:** Position where the sphere mask will be centered.
+    - **nvoxels:** Radius or Volume size in voxels.
+    - **mode:** String with the keywords 'radius' or 'volume' that defines if *nvoxels* is the number of voxels that compose the ROI (volume) or the radius size (radius).
 
 - **Output:**
 
