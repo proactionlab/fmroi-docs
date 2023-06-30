@@ -44,7 +44,7 @@ Spheremask creates a spherical mask centered on *curpos* with the same dimension
     - **mask:** Binary 3D matrix with the same size as *srcvol*. 
  
 
-![Selecting the source image](img/roigen/sphere.png)
+![Selecting the source image](img/roigen/spheremask.png)
 
 
 Cubicmask
@@ -66,7 +66,9 @@ Cubicmask creates a cubic mask centered on *curpos* with the same dimension as *
 - **Output:**
 
     - **mask:** Binary 3D matrix with the same size as *srcvol*.<br>
+ 
 
+![Selecting the source image](img/roigen/cubicmask.png)
 
 Maxkmask
 --------
@@ -86,7 +88,9 @@ Maxkmask searches for the *kvox* highest-intensity voxels of the *srcvol* contai
 - **Output:**
 
     - **mask:** Binary 3D matrix with the same size as *srcvol*.<br>
+ 
 
+![Selecting the source image](img/roigen/maxkmask.png)
 
 Regiongrowingmask
 -----------------
@@ -114,7 +118,9 @@ Regiongrowingmask is a region growing algorithm that groups neighboring voxels f
 - **Outputs:**
 
     - **mask:** Binary 3D matrix with the same size as *srcvol*.<br>
+ 
 
+![Selecting the source image](img/roigen/regiongrowing.png)
 
 Img2mask
 --------
@@ -133,7 +139,11 @@ Img2mask creates a mask determined by the *minthrs* and *maxthrs* intensity thre
 
 - **Outputs:**
 
-    - **mask:** Binary 3D matrix with the same size as *srcvol*.<br>
+    - **mask:** Binary 3D matrix with the same size as *srcvol*.
+
+ 
+
+![Selecting the source image](img/roigen/img2mask.png)
 
 
 Contiguousclustering
@@ -154,7 +164,11 @@ Contiguousclustering group contiguous volxels (if their faces touch). If *minthr
 
 - **Outputs:**
 
-    - **mask:** Integer 3D matrix with the same size as *srcvol*. The non-zero values of mask are the indexes of each clusters.<br>
+    - **mask:** Integer 3D matrix with the same size as *srcvol*. The non-zero values of mask are the indexes of each clusters.
+
+ 
+
+![Selecting the source image](img/roigen/clustermask.png)
 
 
 Drawingmask
@@ -179,4 +193,9 @@ Drawingmask is a tool for generating ROIs from freehand drawings layer by layer 
         - *Draw* - Enable drawing the ROI in the specified axis.<br>
         - *Clear* - Clears the current ROI drawing.<br>
         - *Add* - Converts the current draw in a mask and insert it into the selected ROI. The mask index will be 1 if 'working ROI' is 'new' otherwise it will be the highest value of the selected ROI.<br>
-        - *Rem* - Fills with zeros the drawn ROI and updates the selected ROI.<br>
+        - *Rem* - Fills with zeros the drawn ROI and updates the selected ROI.
+
+
+ 
+
+![Selecting the source image](img/roigen/drawingmask.png)
