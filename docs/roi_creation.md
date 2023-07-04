@@ -49,11 +49,14 @@ Spheremask creates a spherical mask centered on *curpos* with the same dimension
 ![Selecting the source image](img/roigen/spheremask.png)
 
 1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
-2. Choose "spheremask" from the "Method" dropdown menu.
-3. Verify that the selected image is displayed in the source image field.
-4. Determine whether the ROI size will be defined by the radius (number of voxels in the radius) or volume (total number of voxels within the ROI). Please note that when selecting the ROI size based on volume, the spheremask algorithm will attempt to create an ROI that closely resembles a sphere, although it may be less "spherical-shaped" compared to ROIs generated using the radius method.
-5. Enter the desired number of voxels to define the ROI size in the editable textbox "Size (voxels)".
-6. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
+2. You can choose the coordinates of the sphere center in one of the following ways:
+    - Click on the image at the desired position.
+    - Enter the coordinates in the editable textbox labeled "Voxel Nat" coordinates or "Scanner" coordinates.
+    - Click the "Find max" button to search for the voxel with the highest intensity in the selected region.
+4. Verify that the selected image is displayed in the source image field.
+5. Determine whether the ROI size will be defined by the radius (number of voxels in the radius) or volume (total number of voxels within the ROI). Please note that when selecting the ROI size based on volume, the spheremask algorithm will attempt to create an ROI that closely resembles a sphere, although it may be less "spherical-shaped" compared to ROIs generated using the radius method.
+6. Enter the desired number of voxels to define the ROI size in the editable textbox "Size (voxels)".
+7. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
 
 
 Cubicmask
@@ -80,11 +83,15 @@ Cubicmask creates a cubic mask centered on *curpos* with the same dimension as *
 ![Selecting the source image](img/roigen/cubicmask.png)
 
 1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
-2. Choose "cubicmask" from the "Method" dropdown menu.
-3. Verify that the selected image is displayed in the source image field.
-4. Determine whether the ROI size will be defined by the number of voxels in the cube edge or by the cube volume, i.e., the number of voxels within the ROI. Please note that when selecting the ROI size based on volume, the cubicmask algorithm will attempt to create an ROI that closely resembles a cube, although it may be less perfectly "cubic-shaped" compared to ROIs generated using the edge size method.
-5. Enter the desired number of voxels to define the ROI size in the editable textbox "Size (voxels)".
-6. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
+2. You can choose the coordinates of the cube center in one of the following ways:
+    - Click on the image at the desired position.
+    - Enter the coordinates in the editable textbox labeled "Voxel Nat" coordinates or "Scanner" coordinates.
+    - Click the "Find max" button to search for the voxel with the highest intensity in the selected region.
+3. Choose "cubicmask" from the "Method" dropdown menu.
+4. Verify that the selected image is displayed in the source image field.
+5. Determine whether the ROI size will be defined by the number of voxels in the cube edge or by the cube volume, i.e., the number of voxels within the ROI. Please note that when selecting the ROI size based on volume, the cubicmask algorithm will attempt to create an ROI that closely resembles a cube, although it may be less perfectly "cubic-shaped" compared to ROIs generated using the edge size method.
+6. Enter the desired number of voxels to define the ROI size in the editable textbox "Size (voxels)".
+7. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
 
 Maxkmask
 --------
@@ -149,14 +156,18 @@ Regiongrowingmask is a region growing algorithm that groups neighboring voxels f
 ![Selecting the source image](img/roigen/regiongrowing.png)
 
 1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
-2. Choose "regiongrowingmask" from the "Method" dropdown menu.
-3. Verify that the selected image is displayed in the source image field.
-4. From the "Select the growing method" dropdown menu, choose region growing mode (*grwmode*): 'ascending', 'descending', or 'similarity'.
-5. Select "Seed diff" from the "Select the threshold method" dropdown menu and enter the *diffratio* value. This value determines the maximum intensity difference between the seed and its neighbors, and it is used to stop the ROI growth. Alternatively, choose "None" from the dropdown menu if you do not want to use a *diffratio* threshold method.
-6. Enter the desired number of voxels to define the ROI size in the editable textbox "Enter the number of voxels". If you want the ROI growth to stop based solely on the diffratio value, tick the checkbox "Auto".
-7. Determine the *premask* method to constrain the region to be analyzed (Sphere or Mask image). If you selected "Sphere", enter the number of voxels for the premask radius. The center of the spherical premask is determined by the cursor position (curpos).
-8. Alternatively, if you selected "Mask image" as *premask* method, choose the image to be used as the mask from the "Mask image" dropdown menu. The images listed in the "Mask image" dropdown menu are the ones displayed in the [table of loaded images](#selecting-the-source-image).
-8. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
+2. You can choose the coordinates of the seed in one of the following ways:
+    - Click on the image at the desired position.
+    - Enter the coordinates in the editable textbox labeled "Voxel Nat" coordinates or "Scanner" coordinates.
+    - Click the "Find max" button to search for the voxel with the highest intensity in the selected region.
+3. Choose "regiongrowingmask" from the "Method" dropdown menu.
+4. Verify that the selected image is displayed in the source image field.
+5. From the "Select the growing method" dropdown menu, choose region growing mode (*grwmode*): 'ascending', 'descending', or 'similarity'.
+6. Select "Seed diff" from the "Select the threshold method" dropdown menu and enter the *diffratio* value. This value determines the maximum intensity difference between the seed and its neighbors, and it is used to stop the ROI growth. Alternatively, choose "None" from the dropdown menu if you do not want to use a *diffratio* threshold method.
+7. Enter the desired number of voxels to define the ROI size in the editable textbox "Enter the number of voxels". If you want the ROI growth to stop based solely on the diffratio value, tick the checkbox "Auto".
+8. Determine the *premask* method to constrain the region to be analyzed (Sphere or Mask image). If you selected "Sphere", enter the number of voxels for the premask radius. The center of the spherical premask is determined by the cursor position (curpos).
+9. Alternatively, if you selected "Mask image" as *premask* method, choose the image to be used as the mask from the "Mask image" dropdown menu. The images listed in the "Mask image" dropdown menu are the ones displayed in the [table of loaded images](#selecting-the-source-image).
+10. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
 
 
 Img2mask
