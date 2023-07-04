@@ -15,11 +15,11 @@ fMROI provides a user-friendly interface for creating and manipulating ROIs. In 
 <br><br>
 
 
-### Selecting the source image
+### Source image and cursor position
 
 For all ROI creation algorithms in fMROI, the source image (srcimg) must be chosen by clicking on the name of the corresponding image in the table of loaded images (shown in bold).
 
-![Selecting the source image](img/select_srcimg.png)
+![Selecting the source image](img/roigen/srcimg_curpos.png)
 
 
 Spheremask
