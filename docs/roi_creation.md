@@ -48,8 +48,8 @@ Spheremask creates a spherical mask centered on *curpos* with the same dimension
 
 ![Selecting the source image](img/roigen/spheremask.png)
 
-1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
-2. You can choose the coordinates of the sphere center in one of the [following ways](#selecting-the-source-image):
+1. Select the source image by clicking its name in the [table of loaded images](#source-image-and-cursor-position);
+2. You can choose the coordinates of the sphere center in one of the [following ways](#source-image-and-cursor-position):
     - Click on the image at the desired position.
     - Enter the coordinates in the editable textbox labeled "Voxel Nat" coordinates or "Scanner" coordinates.
     - Click the "Find max" button to search for the voxel with the highest intensity in the selected region.
@@ -82,8 +82,8 @@ Cubicmask creates a cubic mask centered on *curpos* with the same dimension as *
 
 ![Selecting the source image](img/roigen/cubicmask.png)
 
-1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
-2. You can choose the coordinates of the cube center in one of the [following ways](#selecting-the-source-image):
+1. Select the source image by clicking its name in the [table of loaded images](#source-image-and-cursor-position);
+2. You can choose the coordinates of the cube center in one of the [following ways](#source-image-and-cursor-position):
     - Click on the image at the desired position.
     - Enter the coordinates in the editable textbox labeled "Voxel Nat" coordinates or "Scanner" coordinates.
     - Click the "Find max" button to search for the voxel with the highest intensity in the selected region.
@@ -115,13 +115,13 @@ Maxkmask searches for the *kvox* highest-intensity voxels of the *srcvol* contai
 
 ![Selecting the source image](img/roigen/maxkmask.png)
 
-1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
+1. Select the source image by clicking its name in the [table of loaded images](#source-image-and-cursor-position);
 2. Choose "maxkmask" from the "Method" dropdown menu.
 3. Verify that the selected image is displayed in the source image field.
 4. Determine the *premask* method to constrain the region to be analyzed (Sphere or Mask image).
 5. Enter the desired number of voxels to define the ROI size in the editable textbox "Size (voxels)".
 6. If you selected "Sphere" in step `4`, enter the number of voxels for the premask radius. The center of the spherical premask is determined by the cursor position (curpos).
-7. If you selected "Mask image" in `4`, choose the image to be used as the mask from the "Mask image" dropdown menu. The images listed in the "Mask image" dropdown menu are the ones displayed in the [table of loaded images](#selecting-the-source-image).
+7. If you selected "Mask image" in `4`, choose the image to be used as the mask from the "Mask image" dropdown menu. The images listed in the "Mask image" dropdown menu are the ones displayed in the [table of loaded images](#source-image-and-cursor-position).
 8. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
 
 
@@ -155,8 +155,8 @@ Regiongrowingmask is a region growing algorithm that groups neighboring voxels f
 
 ![Selecting the source image](img/roigen/regiongrowing.png)
 
-1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
-2. You can choose the coordinates of the seed in one of the [following ways](#selecting-the-source-image):
+1. Select the source image by clicking its name in the [table of loaded images](#source-image-and-cursor-position);
+2. You can choose the coordinates of the seed in one of the [following ways](#source-image-and-cursor-position):
     - Click on the image at the desired position.
     - Enter the coordinates in the editable textbox labeled "Voxel Nat" coordinates or "Scanner" coordinates.
     - Click the "Find max" button to search for the voxel with the highest intensity in the selected region.
@@ -166,7 +166,7 @@ Regiongrowingmask is a region growing algorithm that groups neighboring voxels f
 6. Select "Seed diff" from the "Select the threshold method" dropdown menu and enter the *diffratio* value. This value determines the maximum intensity difference between the seed and its neighbors, and it is used to stop the ROI growth. Alternatively, choose "None" from the dropdown menu if you do not want to use a *diffratio* threshold method.
 7. Enter the desired number of voxels to define the ROI size in the editable textbox "Enter the number of voxels". If you want the ROI growth to stop based solely on the diffratio value, tick the checkbox "Auto".
 8. Determine the *premask* method to constrain the region to be analyzed (Sphere or Mask image). If you selected "Sphere", enter the number of voxels for the premask radius. The center of the spherical premask is determined by the cursor position (curpos).
-9. Alternatively, if you selected "Mask image" as *premask* method, choose the image to be used as the mask from the "Mask image" dropdown menu. The images listed in the "Mask image" dropdown menu are the ones displayed in the [table of loaded images](#selecting-the-source-image).
+9. Alternatively, if you selected "Mask image" as *premask* method, choose the image to be used as the mask from the "Mask image" dropdown menu. The images listed in the "Mask image" dropdown menu are the ones displayed in the [table of loaded images](#source-image-and-cursor-position).
 10. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
 
 
@@ -194,7 +194,7 @@ Img2mask creates a mask determined by the *minthrs* and *maxthrs* intensity thre
 ![Selecting the source image](img/roigen/img2mask.png)
 
 
-1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
+1. Select the source image by clicking its name in the [table of loaded images](#source-image-and-cursor-position);
 2. Choose "img2mask" from the "Method" dropdown menu.
 3. Verify that the selected image is displayed in the source image field and if the minimum (minT) and maximum (maxT) intensity thresholds are correct. The *srcimg* regions displayed in the viewer will be converted in a binary mask. 
 4. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
@@ -224,7 +224,7 @@ Contiguousclustering group contiguous volxels (if their faces touch). If *minthr
 
 ![Selecting the source image](img/roigen/clustermask.png)
 
-1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
+1. Select the source image by clicking its name in the [table of loaded images](#source-image-and-cursor-position);
 2. Choose "contiguousclustering" from the "Method" dropdown menu.
 3. Verify that the selected image is displayed in the source image field and ensure that the minimum (minT) and maximum (maxT) intensity thresholds are correct. The srcimg regions displayed in the viewer will be converted into an index mask, where each non-contiguous region is assigned a positive integer index.
 4. In the editable textbox "Minimum cluster size (voxels)", enter the cluster-size threshold (mincltsz). This threshold eliminates clusters that have fewer elements than mincltsz.
@@ -259,7 +259,7 @@ Drawingmask is a tool for generating ROIs from freehand drawings layer by layer 
  
 ![Selecting the source image](img/roigen/drawingmask.png)
 
-1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
+1. Select the source image by clicking its name in the [table of loaded images](#source-image-and-cursor-position);
 2. Choose "drawingmask" from the "Method" dropdown menu.
 3. Verify that the selected image is displayed in the source image field. 
 4. From the "Select the working ROI" dropdown menu, select the ROI that you want to modify. In case you want to create a new ROI, selec "new".
