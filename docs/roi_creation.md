@@ -49,7 +49,7 @@ Spheremask creates a spherical mask centered on *curpos* with the same dimension
 ![Selecting the source image](img/roigen/spheremask.png)
 
 1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
-2. You can choose the coordinates of the sphere center in one of the following ways:
+2. You can choose the coordinates of the sphere center in one of the [following ways](#selecting-the-source-image):
     - Click on the image at the desired position.
     - Enter the coordinates in the editable textbox labeled "Voxel Nat" coordinates or "Scanner" coordinates.
     - Click the "Find max" button to search for the voxel with the highest intensity in the selected region.
@@ -83,7 +83,7 @@ Cubicmask creates a cubic mask centered on *curpos* with the same dimension as *
 ![Selecting the source image](img/roigen/cubicmask.png)
 
 1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
-2. You can choose the coordinates of the cube center in one of the following ways:
+2. You can choose the coordinates of the cube center in one of the [following ways](#selecting-the-source-image):
     - Click on the image at the desired position.
     - Enter the coordinates in the editable textbox labeled "Voxel Nat" coordinates or "Scanner" coordinates.
     - Click the "Find max" button to search for the voxel with the highest intensity in the selected region.
@@ -156,7 +156,7 @@ Regiongrowingmask is a region growing algorithm that groups neighboring voxels f
 ![Selecting the source image](img/roigen/regiongrowing.png)
 
 1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
-2. You can choose the coordinates of the seed in one of the following ways:
+2. You can choose the coordinates of the seed in one of the [following ways](#selecting-the-source-image):
     - Click on the image at the desired position.
     - Enter the coordinates in the editable textbox labeled "Voxel Nat" coordinates or "Scanner" coordinates.
     - Click the "Find max" button to search for the voxel with the highest intensity in the selected region.
