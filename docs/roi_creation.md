@@ -76,15 +76,15 @@ Cubicmask creates a cubic mask centered on *curpos* with the same dimension as *
 
     - **mask:** Binary 3D matrix with the same size as *srcvol*.<br>
 
+
+![Selecting the source image](img/roigen/cubicmask.png)
+
 1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
 2. Choose "cubicmask" from the "Method" dropdown menu.
 3. Verify that the selected image is displayed in the source image field.
 4. Determine whether the ROI size will be defined by the number of voxels in the cube edge or by the cube volume, i.e., the number of voxels within the ROI. Please note that when selecting the ROI size based on volume, the cubicmask algorithm will attempt to create an ROI that closely resembles a cube, although it may be less perfectly "cubic-shaped" compared to ROIs generated using the edge size method.
 5. Enter the desired number of voxels to define the ROI size in the editable textbox "Size (voxels)".
 6. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
- 
-
-![Selecting the source image](img/roigen/cubicmask.png)
 
 Maxkmask
 --------
@@ -183,6 +183,12 @@ Img2mask creates a mask determined by the *minthrs* and *maxthrs* intensity thre
 ![Selecting the source image](img/roigen/img2mask.png)
 
 
+1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
+2. Choose "img2mask" from the "Method" dropdown menu.
+3. Verify that the selected image is displayed in the source image field and if the minimum (minT) and maximum (maxT) intensity thresholds are correct. The *srcimg* regions displayed in the viewer will be converted in a binary mask. 
+4. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
+
+
 Contiguousclustering
 --------------------
 
@@ -206,6 +212,12 @@ Contiguousclustering group contiguous volxels (if their faces touch). If *minthr
  
 
 ![Selecting the source image](img/roigen/clustermask.png)
+
+1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
+2. Choose "contiguousclustering" from the "Method" dropdown menu.
+3. Verify that the selected image is displayed in the source image field and ensure that the minimum (minT) and maximum (maxT) intensity thresholds are correct. The srcimg regions displayed in the viewer will be converted into an index mask, where each non-contiguous region is assigned a positive integer index.
+4. In the editable textbox "Minimum cluster size (voxels)", enter the cluster-size threshold (mincltsz). This threshold eliminates clusters that have fewer elements than mincltsz.
+5. Click the "Gen ROI" button to generate the ROI. You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.
 
 
 Drawingmask
@@ -234,5 +246,22 @@ Drawingmask is a tool for generating ROIs from freehand drawings layer by layer 
 
 
  
-
 ![Selecting the source image](img/roigen/drawingmask.png)
+
+1. Select the source image by clicking its name in the [table of loaded images](#selecting-the-source-image);
+2. Choose "drawingmask" from the "Method" dropdown menu.
+3. Verify that the selected image is displayed in the source image field. 
+4. From the "Select the working ROI" dropdown menu, select the ROI that you want to modify. In case you want to create a new ROI, selec "new".
+5. From the "Select the working axis" dropdown menu, select the axis in what you want to draw. If you want to draw in multiple axis, add the draw from one axis, change the "Select the working axis" to desired axis, and add the new draw to the same ROI.
+6. From the "Select the drawing method" dropdown menu, select the drawing tool "brush" or "closed_shape". The items from `7` to `9` refer to the drawing method "brush". If you are interest in "closed_shape" method, skip to item `10`.
+7. If you selected "brush", you can enter the brush size in the editable textbox "Brush size". The brush has circular shape and "Brush size" defines its radius in voxels.
+8. For start drawing, click the toggle button "Draw" that will become red to indicate that it is active. In the "Select the working axis" click with left mouse button to start drawing or right mouse button to erase. *Note that if you change the slice that you are drawing before adding it to an ROI, your drawing will be deleted*.
+9. When your ROI draw is done, click the "Add" button. Then the ROI layer that you drew is added to the Selected working ROI. If you selected "new", then a new ROI will be created with index iqual to the highest index + 1.
+10. If you want to draw using the "closed_shape" method select it from "Select the drawing method" dropdown menu.
+11. Select the drawing mode "Freehand" (draw the entire path) or "Polygon" (draw vertices of a polygon).
+12. For start drawing, click the button "Draw". In the "Select the working axis" click with . If you selected the "Freehand" mode, click and hold the left mouse button to draw a closed shape and realease the left mouse button when it is done. If you selected the "Polygon" mode, click the left mouse button to create the vertices of a polygon, each vertice is conected with the previous with a line. To close the drawing shape, double click in the last desired vertice ok click the first vertice.
+13. Click the the button "Clear" to delete a closed shape. Note that it will delete the drawn path and will note affect the selected ROI.
+14. When you finished drawing the closed shape, click the "Add" button. Then the ROI layer that you drew is added to the Selected working ROI. If you selected "new", then a new ROI will be created with index iqual to the highest index + 1.
+15. You can also erase the area define by the drawn closed shape by click the "Rem" button.
+
+*You can review and edit the ROI properties in the "ROI table" tab, and modify the visualization properties by selecting the "under-construction" option in the table of loaded images and adjusting its visualization settings.*
