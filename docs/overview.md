@@ -4,6 +4,8 @@ Overview
 fMROI Graphical User Interface
 ------------------------------
 
+![fMROI Graphical User Interface](img/fmroi_oveview.png)
+
 The fMROI Graphical User Interface (GUI) is designed to provide users with a user-friendly and intuitive experience for creating Regions of Interest (ROIs) and visualizing neuroimages. The GUI consists of three main control sections:
 
 1. **Listing table of loaded images:** In this section, users can view a table listing the loaded images in the order of overlay. It allows for easy selection of images, enabling or disabling their visualization, and provides the ability to view the value of the voxel pointed by the cursor.
@@ -18,8 +20,6 @@ The fMROI Graphical User Interface (GUI) is designed to provide users with a use
 
 The fMROI GUI aims to streamline the workflow of ROI creation and manipulation, providing researchers with an efficient and comprehensive tool for their neuroimage analysis needs.
 
-
-![fMROI Graphical User Interface](img/fmroi_oveview.png)
 
 
 Loading Images
