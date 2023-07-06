@@ -25,6 +25,8 @@ The fMROI GUI aims to streamline the workflow of ROI creation and manipulation, 
 Loading Images
 --------------
 
+![Dropdown load images](img/load_image.png)
+
 fMROI offers three methods for loading images into the software:
 
 1. **Open NIfTI files:** Clicking on "File > Open" opens a window that allows you to select the images you want to load. The images must be three-dimensional NIfTI files (.nii or .nii.gz). If a 4-D NIfTI file is selected, fMROI will display a warning indicating that only the first 3-D volume from the 4-D array will be loaded. You can select multiple files to be opened at once using this method.
