@@ -8,7 +8,7 @@ The fMROI Graphical User Interface (GUI) is designed to provide users with a use
 
 1. **Listing table of loaded images:** In this section, users can view a table listing the loaded images in the order of overlay. It allows for easy selection of images, enabling or disabling their visualization, and provides the ability to view the value of the voxel pointed by the cursor.
 
-2. **Control of image visualization aspect:** This section enables users to define various aspects of image visualization. Users have the flexibility to choose colormap, threshold, transparency, cursor position, and stacking order of images. These controls allow for customization and adjustment of the visual representation of the neuroimages.
+2. **Control of image properties:** This section enables users to define various aspects of image visualization. Users have the flexibility to choose colormap, threshold, transparency, cursor position, and stacking order of images. These controls allow for customization and adjustment of the visual representation of the neuroimages.
 
 3. **ROI design and manipulation section:** This section is divided into three tabs: 
 
@@ -47,8 +47,8 @@ After loading an image using any of the three available options, an entry is gen
 
 *Please note that in the fMROI table of loaded images, the top image is represented by the last line, while the bottom image is represented by the first line.*
 
-Image Visualization Aspect
---------------------------
+Image properties
+----------------
 
 **Controls**
 
