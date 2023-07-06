@@ -94,9 +94,6 @@ Navigation and coordinates
 3. **Mouse Pointer Position**: The mouse pointer position coordinates are updated when you hover over the planar images.
 
 
-<br><br>
-
-
 - fMROI also provides axis windowing options. When you hover the mouse over the images, a floating menu will appear in the top right corner.
 
 ![Image floating menu](img/axis_floatingmenu.png)
