@@ -33,9 +33,17 @@ fMROI offers three methods for loading images into the software:
 
 3. **Load ROIs:** Clicking on "File > Load ROI" opens a window that allows you to select a ROI file. The ROI file should be a three-dimensional NIfTI file (.nii or .nii.gz). Upon loading the ROI file, fMROI generates a temporary image called "roi_underconstruction.nii," and the ROI is displayed in the "ROI Table" tab. If the loaded ROI image contains multiple ROIs (i.e., if the image is not binary), fMROI will convert the image values to positive integers. Each set of non-zero values will be considered as an independent ROI.
 
-After loading an image using any of the three available options, an entry is generated in the fMROI table of loaded images. The image presentation in fMROI is similar to other neuroimage viewers such as FreeView and FSLeyes, where each loaded image is represented as a layer. Consequently, all the loaded images are stacked on top of each other, and to visualize an image that is below others, you can hide the images on top by unticking the checkbox in the first column next to the image name (1). Alternatively, you can adjust the transparency by decreasing the opacity in the control of image visualization aspect or apply thresholding to the top images using the Min and Max threshold controls. The images are stacked in the order they were loaded, with the last loaded image appearing on top. To change the order of the image stack, simply select the desired image (3 - the name of the selected image will be shown in bold) and use the "down" button (4) to move it down one level or the "up" button (5) to move it up one level. Additionally, the pixel values of each image are displayed in the second column (2), and you can remove a selected image by clicking the "Del" button (6).
-
 ![Table of loaded images](img/table_loadedimages.png)
+
+After loading an image using any of the three available options, an entry is generated in the fMROI table of loaded images. The image presentation in fMROI is similar to other neuroimage viewers such as FreeView and FSLeyes, where each loaded image is represented as a layer.
+
+1. All the loaded images are stacked on top of each other, and to visualize an image that is below others, you can hide the images on top by unticking the checkbox in the first column next to the image name. Alternatively, you can adjust the transparency by decreasing the opacity in the control of image visualization aspect or thresholding to the top images using the Min and Max threshold controls.
+2. The second column of the table displays the pixel values corresponding to the cursor position for each image.
+3. To select an image, click its name. The selected image will be displayed in bold.
+4. The images are stacked in the order they were loaded, with the most recently loaded image appearing on top. To change the order of the image stack, simply select the desired image and click the "down" button to move it down one level.
+5. If you want to move it up, click "up" button to move it up one level.
+6. To delete a selected image, click the "Del" button.
+
 
 *Please note that in the fMROI table of loaded images, the top image is represented by the last line, while the bottom image is represented by the first line.*
 
