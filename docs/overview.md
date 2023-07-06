@@ -101,7 +101,7 @@ Navigation and coordinates
 
 1. **Toggle Grid View**: Switch between the grid view (showing four images) and the single view (showing only the selected image).
 
-2. **Rotation tool**: Three-dimensional rotation tool. This tool only works in the reder images.
+2. **Rotation tool**: Three-dimensional rotation tool. This tool is enable only for the reder images.
 
 3. **Pan Tool**: Move the images within the display plane. Select the pan tool, click and hold the left mouse button, drag the image to the desired position, and release the left mouse button.
 
