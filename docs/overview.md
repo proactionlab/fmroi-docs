@@ -95,7 +95,7 @@ Navigation and coordinates
 <br><br>
 
 
-- fMROI also provides axis windowing options. When you hover the mouse over the images, a floating menu will appear in the top right corner.
+**fMROI also provides axis windowing options. When you hover the mouse over the images, a floating menu will appear in the top right corner.**
 
 ![Image floating menu](img/axis_floatingmenu.png)
 
