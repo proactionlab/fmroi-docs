@@ -98,15 +98,15 @@ Navigation and coordinates
 
 ![Image floating menu](img/axis_floatingmenu.png)
 
-(`1`) **Toggle Grid View**: Switch between the grid view (showing four images) and the single view (showing only the selected image).
+1. **Toggle Grid View**: Switch between the grid view (showing four images) and the single view (showing only the selected image).
 
-(`2`) **Pan Tool**: Move the images within the display plane. Select the pan tool, click and hold the left mouse button, drag the image to the desired position, and release the left mouse button.
+2. **Pan Tool**: Move the images within the display plane. Select the pan tool, click and hold the left mouse button, drag the image to the desired position, and release the left mouse button.
 
-(`3`) **Zoom-in Tool**: Click on a position or select a region by holding the left mouse button and moving the pointer to another position.
+3. **Zoom-in Tool**: Click on a position or select a region by holding the left mouse button and moving the pointer to another position.
 
-(`4`) **Zoom-out Tool**: Click on the image to zoom-out.
+4. **Zoom-out Tool**: Click on the image to zoom-out.
 
-(`5`) **Restore Default Visualization**: Restore the default visualization settings.
+5. **Restore Default Visualization**: Restore the default visualization settings.
 
 
 ROI design and manipulation
@@ -121,9 +121,9 @@ It is also easy to combine ROIs or calculate the conjunction between them in the
 
 ![ROI creation tabs](img/roi_tabs.png)
 
-**ROI table tab**
+**1. ROI table tab**
 
-In the first tab (`1`), you will find a list of under-construction ROIs. The ROI Table in this tab allows you to manually assign ROI indices, names, colors (RGB values), and transparency (A). You can easily edit the ROI Table to customize your ROIs according to your requirements.
+In the first tab, you will find a list of under-construction ROIs. The ROI Table in this tab allows you to manually assign ROI indices, names, colors (RGB values), and transparency (A). You can easily edit the ROI Table to customize your ROIs according to your requirements.
 
 Once you have completed creating the ROIs, you have two options for saving them:
 
@@ -131,15 +131,15 @@ Once you have completed creating the ROIs, you have two options for saving them:
 
 - Save as Atlas + LUT: By ticking the "Atlas + LUT" option, you can save the ROIs in a single NIfTI file with different indices. This format combines an atlas-like image with a lookup table that contains ROI Table values. This option is helpful when you want to store multiple ROIs in a compact manner.
 
-**ROI Generation tab (Gen ROI)**
+**2. ROI Generation tab (Gen ROI)**
 
-The second tab (`2`) provides tools for generating ROIs using different algorithms. Start by selecting an algorithm from the Method dropdown menu. Once you select an algorithm, its specific interface for setting the parameters will be displayed.
+The second tab provides tools for generating ROIs using different algorithms. Start by selecting an algorithm from the Method dropdown menu. Once you select an algorithm, its specific interface for setting the parameters will be displayed.
 
 Pay attention to the "Find Max" button, which helps you identify the voxel with the highest value based on the selected algorithm and its parameters. It's worth noting that the search is limited to the ROI defined by the interface parameters, even if no ROI is created practically. This feature assists in exploring potential regions of interest within your data.
 
-**Logical Operations tab (Logic Op)**
+**3. Logical Operations tab (Logic Op)**
 
-The third tab (`3`) enables performing logical operations between ROIs. You can create complex combinations of ROIs using logical operators. Let's consider the example ilustrated in the figure above:
+The third tab enables performing logical operations between ROIs. You can create complex combinations of ROIs using logical operators. Let's consider the example ilustrated in the figure above:
 
 - Conjunction (AND): Combine two loaded images using the conjunction operation.
 - Disjunction (OR): Perform a logical OR operation between the previous conjunction output and an under-construction ROI.
