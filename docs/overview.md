@@ -92,6 +92,7 @@ Navigation and coordinates
 1. To customize the cursor style or hide it: Click the "+" button to toggle between different cursor styles: full cross, small cross, and hide styles.
 2. **Cursor Position**: The editable fields display the cursor position based on typed input or clicked position.
 3. **Mouse Pointer Position**: The mouse pointer position coordinates are updated when you hover over the planar images.
+<br>
 
 
 - fMROI also provides axis windowing options. When you hover the mouse over the images, a floating menu will appear in the top right corner.
