@@ -50,11 +50,11 @@ The viewer contains 4 axes that display 3 planar slices (axial, coronal, and sag
 
 Example of Color LUT:
 
-| Index | Label_Name | R   | G   | B   |
-|-------|------------|-----|-----|-----|
-| 0     | label_1    | 0   | 0   | 0   |
-| 1     | label_2    | 255 | 255 | 255 |
-| n     | label_n    | r_n | g_n | b_n |
+| Index | Label_Name | R   | G   | B   | A   |
+|-------|------------|-----|-----|-----|-----|
+| 0     | label_1    | 0   | 0   | 0   | 0   |
+| 1     | label_2    | 255 | 255 | 255 | 0   |
+| n     | label_n    | r_n | g_n | b_n | 0   |
 
 
 By default, fMROI doesn’t display the volumetric render of the images. To create an image render, just tick the checkbox "3D" (`1`). After displaying the volumetric image, you can select the color of the volume from the render color dropdown menu (`3`). 
