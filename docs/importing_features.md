@@ -29,6 +29,7 @@ There are only four exceptions to the input arguments, as fMROI uses specific ke
 When these special keywords are used as input arguments for the ROI method functions, the generic GUI builder does not generate a textbox but instead directly inputs the predefined internal values. This approach simplifies the communication of GUI information to new ROI creation algorithms, relieving developer collaborators from the need to understand GUI programming.
 
 **Alternatively, if you want to import functions without utilizing the fMROI GUI, you can simply save the files in the appropriate folders:**
+
 1. The main function of the method to be imported can be directly saved in the `fMROI_root_folder/roimethods/methods` folder.
 2. The functions for creating the GUI and the Caller function should be saved in the `fMROI_root_folder/roimethods/gui` folder.
 3. If the method includes callback functions, they must be saved in the `fMROI_root_folder/roimethods/callback` folder.
