@@ -41,6 +41,26 @@ When these special keywords are used as input arguments for the ROI method funct
 Importing image templates
 -------------------------
 
+fMROI includes a variety of preinstalled templates that are readily available for use. These templates encompass anatomical images, functional maps, and atlases, offering a comprehensive set of resources. You can load these templates by selecting "File > Load Template".
+In addition to the preinstalled templates, fMROI allows you to import new templates, delete existing ones, or restore the default template set.
+
+**To import a set of images as a new template, follow these steps:**
+
+1. Access the menu "Config > Import Template".
+2. In the popup window, select the root folder that contains the images you wish to import.
+3. Click the "Open" button to proceed.
+
+*Alternatively, if you prefer to import functions without utilizing the fMROI GUI, you can simply save the template folder you want to import directly into the `fMROI_root_folder/templates` directory.*
+
+If the images are organized into subfolders within the root folder, fMROI will automatically create submenus to reflect this structure, making it easier for you to navigate and select the desired templates.
+
+
+![Example importing templates](img/ex_importing_template.png)
+
+
+**- To delete all templates, navigate to the "Config" menu and select "Clear template folder".**
+
+**- To restore the default templates, go to the "Config" menu and choose "Restore default templates".**
 
 
 Importing extra tools
