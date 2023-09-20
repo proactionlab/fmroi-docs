@@ -65,3 +65,12 @@ If the images are organized into subfolders within the root folder, fMROI will a
 
 Importing extra tools
 ---------------------
+
+The extra tools encompass a collection of functions that are not essential for the core functionality of fMROI but can be highly useful in various tasks (located in the “Tools” menu). By default, fMROI 1.0.x includes a screenshot assistant that allows the automated capture of multiple slices and the generation of image mosaics.
+
+**To import a new tool using fMROI GUI, follow these two simple steps:**
+
+1. Go to the "Config" menu and select "Import tools."
+2. In the popup window, choose the folder containing the functions to be imported and click the "Open" button. Even if you want to import only one file, it should be placed alone in a folder.
+
+*Alternatively, if you prefer to import functions without utilizing the fMROI GUI, you can simply save the new tool folder that you want to import directly into the `fMROI_root_folder/tools` directory.*
