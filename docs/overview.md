@@ -151,5 +151,5 @@ The third tab enables performing logical operations between ROIs. You can create
 - Disjunction (OR): Perform a logical OR operation between the previous conjunction output and an under-construction ROI.
 - Conjunction with Negation (NOT): Finally, combine the previous output with the negation of another under-construction ROI using the conjunction operator.
 
-*It is worth noting that fMROI allows you to perform logical operations between both loaded images and under-construction ROIs. If the loaded images are not binary, they are automatically converted into binary format using the **img2mask** algorithm, which considers the selected minimum and maximum thresholds.*
+*It is worth noting that fMROI allows you to perform logical operations between both loaded images and under-construction ROIs. If the loaded images are not binary, they are automatically converted into binary format using the [img2mask](roi_creation.md#img2mask) algorithm, which considers the selected minimum and maximum thresholds.*
 
