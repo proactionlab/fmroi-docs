@@ -15,6 +15,8 @@ Importing new ROI algorithms is a powerful feature of fMROI as it facilitates th
 1. Go to the "Config" menu and select "Import ROI function."
 2. In the popup window, choose the folder containing the functions to be imported and click the "Open" button. Even if you want to import only one file, it should be placed alone in a folder.
 
+*Importantly, the folder containing the methods to be imported must have exactly the same name as the main method file.*
+
 The folder for importing functions can contain multiple ROI creation algorithms, and each algorithm can consist of multiple files. The fMROI import function will automatically identify the file suffixes (more information about the syntax of ROI creation algorithms can be found in the development section) and place them in the appropriate folders.
 
 
@@ -28,11 +30,9 @@ There are only four exceptions to the input arguments, as fMROI uses specific ke
 
 When these special keywords are used as input arguments for the ROI method functions, the generic GUI builder does not generate a textbox but instead directly inputs the predefined internal values. This approach simplifies the communication of GUI information to new ROI creation algorithms, relieving developer collaborators from the need to understand GUI programming.
 
-**Alternatively, if you want to import functions without utilizing the fMROI GUI, you can simply save the files in the appropriate folders:**
+**Alternatively, if you want to import functions without utilizing the fMROI GUI, you can simply copy the folder containing the method functions that you wish to import directly into the `fMROI_root_folder/roimethods` directory**
 
-1. The main function of the method to be imported can be directly saved in the `fMROI_root_folder/roimethods/methods` folder.
-2. The functions for creating the GUI and the Caller function should be saved in the `fMROI_root_folder/roimethods/gui` folder.
-3. If the method includes callback functions, they must be saved in the `fMROI_root_folder/roimethods/callback` folder.
+While it's not mandatory, to maintain consistency with fMROI code organization, we recommend structuring the method functions as follows: place the method functions within a folder `[method name]/methods`, place the GUI creation and caller functions in `[method name]/gui`, and the callback functions in `[method name]/callback`.
 
 
 *Note: Exercise caution when managing files manually, as improper handling may lead to program crashes.*
